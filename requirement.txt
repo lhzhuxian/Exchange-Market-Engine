@@ -1,0 +1,16 @@
+CREATE TABLE ACCOUNT("             \
+  "ID   INT PRIMARY KEY  NOT NULL," \
+  "SYM     TEXT              NOT NULL," \
+  "BALANCE        INT             NOT NULL );
+CREATE TABLE SYMBOL("             \
+  "SYM   TEXT   NOT NULL," \
+  "ID    INT              NOT NULL," \
+  "POSITION        INT             NOT NULL );
+CREATE TABLE SORDER("             \
+  "SYM   TEXT PRIMARY KEY  NOT NULL," \
+  "ID    INT            NOT NULL," \
+  "AMOUNT        INT             NOT NULL );
+CREATE TABLE BORDER("             \
+  "ID   INT PRIMARY KEY  NOT NULL," \
+  "SYMBOL     TEXT              NOT NULL," \
+  "BALANCE        INT             NOT NULL );

@@ -1,0 +1,9 @@
+#include <cstdlib>
+#include <iostream>
+#include <boost/asio.hpp>
+#include <boost/bind.hpp>
+#include "pugiconfig.hpp"
+#include "pugixml.hpp"
+using std::cout;
+using std::cin;
+using std::endl;
