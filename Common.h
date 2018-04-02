@@ -4,6 +4,11 @@
 #include <boost/bind.hpp>
 #include "pugiconfig.hpp"
 #include "pugixml.hpp"
+#include  <memory>
+#include <string>
 using std::cout;
 using std::cin;
 using std::endl;
+using std::unique_ptr;
+using std::string;
+using std::to_string;

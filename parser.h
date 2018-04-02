@@ -1,5 +1,5 @@
 #include "Common.h"
-
+#include "database.h"
 class Parser {
  private:
   pugi::xml_document doc;
