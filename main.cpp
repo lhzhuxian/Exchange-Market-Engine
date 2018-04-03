@@ -1,9 +1,9 @@
 #include "Common.h"
 #include "server.h"
-#include "database.h"
+//#include "database.h"
 
 
-unique_ptr<connection> database::c(new connection("dbname=xxx user=postgres password = passw0rd"); 
+//unique_ptr<connection> database::c(new connection("dbname=xxx user=postgres password = passw0rd"); 
   
   
 int main(void) {  

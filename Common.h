@@ -6,9 +6,11 @@
 #include "pugixml.hpp"
 #include  <memory>
 #include <string>
+#include <vector>
 using std::cout;
 using std::cin;
 using std::endl;
 using std::unique_ptr;
 using std::string;
 using std::to_string;
+using std::vector;

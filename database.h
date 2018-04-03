@@ -1,6 +1,12 @@
 #include "Common.h"
-#include <pqxx/pgxx>
+#include <pqxx/pqxx>
 
+string attribute =" (    "			\
+  " ID    INT PRIMARY KEY, "	\
+  " SYM   TEXT   NOT NULL, "			\
+  " ID    INT            NOT NULL, "		\
+  " PRICE INT   NOT NULL, "			\
+  " AMOUNT        INT             NOT NULL );";
 
 
 class database {
