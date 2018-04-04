@@ -1,5 +1,4 @@
 #include "server.h"
-
 #define SIZE 1024
 Server::Server(boost::asio::io_service& _ios) : ios_(_ios),
 						acceptor_(_ios, boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), 12345)) {
@@ -20,6 +19,11 @@ void Server::start(void) {
     char buf[SIZE];
     acceptor_.accept(*socket);
     size_t len = socket->read_some(boost::asio::buffer(buf), error);
+
+
+    //add
+    Parser request(buf, len);
+    request.start();
     
     /*
     if (error == boost::asio::error::eof) {

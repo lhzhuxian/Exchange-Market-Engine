@@ -1,3 +1,7 @@
+#ifndef _SERVER_H__
+#define _SERVER_H__
+
+
 #include "Common.h"
 #include "parser.h"
 
@@ -27,3 +31,4 @@ public:
     void create(Parser & request);
     
 };
+#endif
