@@ -20,17 +20,18 @@ int get_id () {
 int main(void) {
   order_id = get_id();
   cout << "order start from " << order_id << endl; 
-  try {  
+  //  try {  
     cout << "server start." << endl;  
     // 建造服务对象  
     boost::asio::io_service ios;  
         // 构建Server实例
     
     Server server(ios);  
-  }  
+    /*    }  
   catch (std::exception& _e) {  
-    cout << _e.what() << endl;  
-  }  
+    cout << _e.what() << endl;
+    cout << "miaomiaomiao" << endl;
+    }  */
   cout << "server end." << endl;  
   return 0;  
 }  

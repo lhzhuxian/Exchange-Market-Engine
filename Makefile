@@ -8,7 +8,7 @@ server.o: server.cpp server.h
 parser.o: parser.cpp parser.h
 	g++ -std=c++11 parser.cpp -c $(GDB)
 database.o: server.cpp database.h
-	g++ -std=c++11 database.cpp -c $(GDB)
+	g++ -std=c++11 database.cpp -c $(GDB) $(BOOST)
 pugixml.o: pugixml.cpp pugixml.hpp pugiconfig.hpp
 	g++ -std=c++11 pugixml.cpp -c
 clean:

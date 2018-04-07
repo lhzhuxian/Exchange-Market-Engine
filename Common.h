@@ -13,6 +13,9 @@
 #include <string>
 #include <vector>
 #include <pqxx/pqxx>
+#include "boost/date_time/posix_time/posix_time.hpp"
+#include "boost/date_time/posix_time/posix_time_types.hpp"
+#include <atomic>
 using namespace pqxx;
 using std::pair;
 using std::cout;
@@ -27,4 +30,6 @@ using std::stoi;
 using std::unordered_map;
 
 extern int order_id;
+ssize_t GetCurrentStamp();
+
 #endif
